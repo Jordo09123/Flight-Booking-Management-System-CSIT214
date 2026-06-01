@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<!-- Sets the document language to English -->
+<head>
+	<!-- Defines metadata and links for the document -->
+	<meta charset="UTF-8">
+	<!-- Specifies the character encoding as UTF-8 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Ensures responsive design for various device widths -->
+	<title>Fly Dream Air</title>
+	<!-- Sets the page title displayed in the browser tab -->
+	<link rel="stylesheet" href="CSS/styles.css">
+	<!-- Links to an external CSS stylesheet for styling -->
+	<!--booking css-->
+	<link rel="stylesheet" href="CSS/bookingStyles.css">
+</head>
+<body>
+    <!-- Contains the visible content of the webpage -->
+    <div class="header">
+    
+		<!-- Header section containing the logo and top navigation -->
+		<div class="logo">
+		  <!-- Container for the website logo -->
+		  <a href=index.html><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+		  <!-- Displays the Fly Dream Air logo image -->
+		</div>
+    
+		<div class="top-nav">
+		<!-- Top navigation bar with search and login options -->
+			<div class="search-container">
+				<!-- Container for the search input and icon -->
+				<input type="text" placeholder="Search..." class="search-box">
+				<!-- Text input for search queries -->
+				<img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+				<!-- Search icon image -->
+			</div>
+			<div class="login-dropdown">
+				<!-- Dropdown menu for customer login options -->
+				<button class="login-btn">Miss Julia</button>
+				<!-- Button to trigger the customer login dropdown -->
+				<div class="login-content">
+					<br>Gold Member</br>
+					<!-- Link to customer redeem points -->
+					<a href="#">Redeem Point</a>
+					<!-- Link to Log out -->
+					<a href="#">Log out</a>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <div class="nav-tabs">
+		<!-- Navigation tabs for main site sections -->
+		<a href="index.html" class="active"><img src="Images/PlaneIcon.png" alt="Plane Icon" class="plane-icon">BOOK FLIGHT</a>
+		<!-- Link to book flight page, marked as active with a plane icon -->
+		<a href="#">MANAGE BOOKING</a>
+		<!-- Link to manage booking page -->
+		<a href="#">ONLINE CHECK-IN</a>
+		<!-- Link to online check-in page -->
+		<a href="#">FLIGHT STATUS</a>
+		<!-- Link to flight status page -->
+		<a href="#">FREQUENT FLYER</a>
+		<!-- Link to frequent flyer programme page -->
+		<a href="#">AIRPORT LOUNGES</a>
+		<!-- Link to airport lounges page -->
+    </div>
+
+    <!--Start Booking Flight-->
+    <div class="page-container">
+		<div class="booking-page">
+			<header class="booking-header">Flights</header>
+			<!--Flight Departure to Destination and date-->
+			<div class="flight-container">
+				<img src="Images/depart.png" alt="Dept-Des" class="icon">
+				<div class="flight-info">
+					<div class="route">
+						<!--Departure and Destination location will be change according to user selected-->
+						<span class="bold">
+							<span id="fromLocation"></span> to <span id="toLocation"></span>
+						</span>
+						<!--Back to search flight page-->
+						<a href="index.html" class="change-search">Change search <img src="Images/pen.png" alt="Edit" class="icon-inline"></a>
+					</div>
+					<div class="date">
+						<!--Departure date will be change according to user selected date-->
+						<span id="departureDate"></span>
+						<!--In the future will allow user to select the date-->
+						<a href="index.html" class="see-dates">See other dates </a>
+					</div>
+				</div>
+			</div>
+			<!--End Flight Departure location and date-->
+			</br>
+			
+			<!--Start list of lights-->
+			<!--In the Future, below data will be linked with data server to get the auto date schedule-->
+			<div class="flight-card1">
+				<!--Depart location-->
+				<div class="column location">
+					<div></div><!--depart city-->
+					<div class="time">06:05</div>
+				</div>
+			
+				<!--Arrive location-->
+				<div class="column location">
+				<div></div><!--arrive city-->
+				<div class="time">07:40</div>
+				</div>
+			
+				<!--Duration-->
+				<div class="column duration">
+					<strong>Duration</strong>
+					<br>
+					<img src="Images/FDA_logo.png" class="flight-logo">
+					<div>FD401</div> 
+					<span class="time-small">1h 35m</span>
+				</div>
+			
+				<!--Economy Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Economy</div>
+						<div class="price">$119.00</div>
+					</a>
+				</div>
+			
+				<!--Business Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Business</div>
+						<div class="price">$1,313.00</div>
+					</a>
+				</div>
+			</div>
+		
+			</br>
+
+			<div class="flight-card2">
+				<!--Depart location-->
+				<div class="column location">
+					<div></div><!--depart city-->
+					<div class="time">07:15</div>
+				</div>
+			
+				<!--Arrive location-->
+				<div class="column location">
+					<div></div><!--arrive city-->
+					<div class="time">08:50</div>
+				</div>
+			
+				<!--Duration-->
+				<div class="column duration">
+					<strong>Duration</strong><br>
+					<img src="Images/FDA_logo.png" class="flight-logo">
+					<div>FD201</div> 
+					<span class="time-small">1h 35m</span>
+				</div>
+			
+				<!--Economy Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Economy</div>
+						<div class="price">$219.00</div>
+					</a>
+				</div>
+			
+				<!--Business Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Business</div>
+						<div class="price">$1,313.00</div>
+					</a>
+				</div>
+			</div>
+
+			</br>
+
+			<div class="flight-card3">
+				<!--Depart location-->
+				<div class="column location">
+					<div></div><!--depart city-->
+					<div class="time">07:05</div>
+				</div>
+			
+				<!--Arrive location-->
+				<div class="column location">
+					<div></div><!--arrive city-->
+					<div class="time">08:40</div>
+				</div>
+			
+				<!--Duration-->
+				<div class="column duration">
+					<strong>Duration</strong><br>
+					<img src="Images/FDA_logo.png" class="flight-logo">
+					<div>FD321</div> 
+					<span class="time-small">1h 35m</span>
+				</div>
+			
+				<!--Economy Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Economy</div>
+						<div class="price">$346.00</div>
+					</a>
+				</div>
+			
+				<!--Business Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Business</div>
+						<div class="price">$1,313.00</div>
+					</a>
+				</div>
+			</div>
+
+			</br>
+
+			<div class="flight-card4">
+				<!--Depart location-->
+				<div class="column location">
+					<div></div><!--depart city-->
+					<div class="time">09:05</div>
+				</div>
+			
+				<!--Arrive location-->
+				<div class="column location">
+					<div></div><!--arrive city-->
+					<div class="time">10:40</div>
+				</div>
+			
+				<!--Duration-->
+				<div class="column duration">
+					<strong>Duration</strong><br>
+					<img src="Images/FDA_logo.png" class="flight-logo">
+					<div>FD522</div> 
+					<span class="time-small">1h 35m</span>
+				</div>
+			
+				<!--Economy Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Economy</div>
+						<div class="price">$376.00</div>
+					</a>
+				</div>
+			
+				<!--Business Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Business</div>
+						<div class="price">$1,413.00</div>
+					</a>
+				</div>
+			</div>
+
+			</br>
+
+			<div class="flight-card5">
+				<!--Depart location-->
+				<div class="column location">
+					<div></div><!--depart city-->
+					<div class="time">10:05</div>
+				</div>
+			
+				<!--Arrive location-->
+				<div class="column location">
+					<div></div><!--arrive city-->
+					<div class="time">11:40</div>
+				</div>
+			
+				<!--Duration-->
+				<div class="column duration">
+					<strong>Duration</strong><br>
+					<img src="Images/FDA_logo.png" class="flight-logo">
+					<div>FD222</div> 
+					<span class="time-small">1h 35m</span>
+				</div>
+			
+				<!--Economy Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Economy</div>
+						<div class="price">$396.00</div>
+					</a>
+				</div>
+			
+				<!--Business Fare-->
+				<div class="column fare">
+					<a href="select_flight.html" class="fare-box economy-box">
+						<div class="label">Business</div>
+						<div class="price">$1,513.00</div>
+					</a>
+				</div>
+			</div>
+			<!--End list of flights-->
+		</div><!--End booking page-->
+	</div><!--End page container-->
+	<!--End Booking Flight-->
+
+	<div class="footer-nav">
+		<!-- Footer navigation with links to additional pages -->
+		<a href="#">DESTINATIONS</a>
+		<!-- Link to destinations page -->
+		<a href="#">PLAN YOUR TRAVEL</a>
+		<!-- Link to travel planning page -->
+		<a href="#">OUR FLEET</a>
+		<!-- Link to fleet information page -->
+		<a href="#">TRAVEL TIPS</a>
+		<!-- Link to travel tips page -->
+		<a href="#">FAQs</a>    
+		<!-- Link to frequently asked questions page -->
+		<a href="#">ABOUT US</a>
+		<!-- Link to about us page -->
+		<a href="#">CONTACT US</a>
+		<!-- Link to contact us page -->
+	</div>
+
+	<script src="JS/scripts.js"></script>
+	<script src="JS/booking.js"></script>
+
+</body>
+</html>

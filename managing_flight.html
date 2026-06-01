@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<!-- Sets the document language to English -->
+<head>
+  <!-- Defines metadata and links for the document -->
+  <meta charset="UTF-8">
+  <!-- Specifies the character encoding as UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures responsive design for various device widths -->
+  <title>Fly Dream Air</title>
+  <!-- Sets the page title displayed in the browser tab -->
+  <link rel="stylesheet" href="CSS/styles.css">
+  <!-- Links to an external CSS stylesheet for styling -->
+  <!--booking css-->
+  <link rel="stylesheet" href="CSS/managing_flight.css">
+</head>
+<body>
+    <!-- Contains the visible content of the webpage -->
+    <div class="header">
+        <!-- Header section containing the logo and top navigation -->
+        <div class="logo">
+            <!-- Container for the website logo -->
+            <a href="index.html"><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+            <!-- Displays the Fly Dream Air logo image -->
+        </div>
+
+        <div class="top-nav">
+            <!-- Top navigation bar with search and login options -->
+            <div class="search-container">
+                <!-- Container for the search input and icon -->
+                <input type="text" placeholder="Search..." class="search-box">
+                <!-- Text input for search queries -->
+                <img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+                <!-- Search icon image -->
+            </div>
+            <div class="login-dropdown">
+                <!-- Dropdown menu for customer login options -->
+                <button class="login-btn">Miss Julia</button>
+                <!-- Button to trigger the customer login dropdown -->
+                <div class="login-content">
+                    <br>Gold Member</br>
+                    <!-- Link to customer redeem points -->
+                    <a href="#">Redeem Point</a>
+                    <!-- Link to Log out -->
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-tabs">
+        <!-- Navigation tabs for main site sections -->
+        <a href="index.html" class="active"><img src="Images/PlaneIcon.png" alt="Plane Icon" class="plane-icon">BOOK FLIGHT</a>
+        <!-- Link to book flight page -->
+        <a href="searchbar.html"  class="active"><img src="Images/PlaneIcon.png" alt="Plane Icon" class="plane-icon">MANAGE BOOKING</a>
+        <!-- Link to manage booking page -->
+        <a href="#">ONLINE CHECK-IN</a>
+        <!-- Link to online check-in page -->
+        <a href="#">FLIGHT STATUS</a>
+        <!-- Link to flight status page -->
+        <a href="#">FREQUENT FLYER</a>
+        <!-- Link to frequent flyer programme page -->
+        <a href="#">AIRPORT LOUNGES</a>
+        <!-- Link to airport lounges page -->
+    </div>
+
+
+
+    <!-- Manage Booking Start -->
+    <div class="container">
+        <!-- Reservation Summary -->
+        <div id="summary" class="card">
+            <h1>Reservation Summary</h1>
+            <div class="info">
+                <p><strong>Booking Reference:</strong> ABC123</p>
+                <p><strong>Passenger Name:</strong> <span id="passenger-name"></span></p>
+                <p><strong>Flight:</strong> <span id="flight">FD123 | SYD → MEL</span></p>
+                <p><strong>Departure:</strong> <span id="departure">May 20, 2025 | 7:00 PM</span></p>
+                <p><strong>Seat:</strong> <span id="seat">12A | Class: Economy</span></p>
+                <p><strong>Baggage:</strong> <span id="baggage">No extra bag</span></p>
+                <p><strong>Meal:</strong> <span id="meal">Standard</span></p>
+                <p><strong>Special Assistance:</strong> <span id="assistance">None</span></p>
+                <p><strong>Email:</strong> <span id="email-info"></span></p>
+                <p><strong>Phone:</strong> <span id="phone-info">+1 234 567 8900</span></p>
+            </div>
+        </div>
+    
+        <div class="modification-buttons">
+            <a href="change_booking.html" class="active">Change Booking</a>
+            <a href="change_seat.html" class="active">Change Seat</a>
+            <a href="add_services.html">Add Services</a>
+            <a href="update_info.html">Update Info</a>
+            <a href="documents.html">Documents & Requests</a>
+        </div>
+          
+    </div>
+    <!-- End of Manage Booking -->
+
+    <div class="footer-nav">
+        <!-- Footer navigation with links to additional pages -->
+        <a href="#">DESTINATIONS</a>
+        <a href="#">PLAN YOUR TRAVEL</a>
+        <a href="#">OUR FLEET</a>
+        <a href="#">TRAVEL TIPS</a>
+        <a href="#">FAQs</a>    
+        <a href="#">ABOUT US</a>
+        <a href="#">CONTACT US</a>
+    </div>
+
+    <script src="JS/manageflight_scripts.js"></script>
+
+</body>
+</html>

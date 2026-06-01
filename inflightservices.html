@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Defines metadata and links for the document -->
+        <meta charset="UTF-8">
+        <!-- Specifies the character encoding as UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Ensures responsive design for various device widths -->
+        <title>Fly Dream Air</title>
+        <!-- Sets the page title displayed in the browser tab -->
+        <link rel="stylesheet" href="CSS/styles.css">
+   
+        <!-- Links to an external CSS stylesheet for styling -->
+        <!--booking css-->
+        <link rel="stylesheet" href="CSS/bookingStyles.css">
+        
+        <!--links to services css-->
+        <link rel="stylesheet" href="CSS/services.css">      
+
+    </head>
+
+    <body>
+
+        <!-- Contains the visible content of the webpage -->
+        <div class="header">
+        
+        <!-- Header section containing the logo and top navigation -->
+        <div class="logo">
+            <!-- Container for the website logo -->
+            <a href=index.html><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+            <!-- Displays the Fly Dream Air logo image -->
+        </div>
+        
+        <div class="top-nav">
+            <!-- Top navigation bar with search and login options -->
+            <div class="search-container">
+            <!-- Container for the search input and icon -->
+            <input type="text" placeholder="Search..." class="search-box">
+            <!-- Text input for search queries -->
+            <img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+            <!-- Search icon image -->
+            </div>
+            <div class="login-dropdown">
+            <!-- Dropdown menu for customer login options -->
+            <button class="login-btn">Miss Julia</button>
+            <!-- Button to trigger the customer login dropdown -->
+            <div class="login-content">
+                <br>Gold Member</br>
+                <!-- Link to customer redeem points -->
+                <a href="#">Redeem Point</a>
+                <!-- Link to Log out -->
+                <a href="#">Log out</a>
+            </div>
+            </div>
+        </div>
+        </div>  
+
+        <div class="nav-tabs">
+            <!-- Flight Selection compeleted -->
+            <a href="select_flight.html"><img src="Images/tick.png" class="tick-icon">Select</a>
+            <a href="guests_info.html"><img src="Images/tick.png" class="tick-icon">Guests Information</a>
+            <a href="seat_selection_linked.html"><img src="Images/tick.png" class="tick-icon">Seat Selection</a>
+            <a href="#"><u>Add Services</u></a>
+            <a href="#">Booking Summary</a>
+            <a href="#">Payment</a>
+        </div>
+
+        <div class="main">
+            <div class="section-title">
+                <h2>In-flight menu</h2>
+                <p>Browse and enjoy our various selections of food and beverages that can be purchased in-flight</p>
+            </div>
+
+            <!-- Menu items and columns-->
+            <div class="menus">
+                <div class="menu-column">
+                    <h4>Main Meals</h4>
+
+                    <!-- column 1-->
+                    <div class="single-menu">
+                        <img src="Images/grilled-chicken.jpg" alt=""  >
+                        <div class="menu-content">
+                            <h5>Grilled Chicken with Herb Rice and Steamed Vegetables<span> $18</span></h5>
+                            <p>Fresh grilled chicken served next to a bed of warm herb rice and seasonal vegetables</p>
+                            <button onclick="orderMeal('Grilled Chicken with Herb Rice and Steamed Vegetables')">Order</button>
+                            <button onclick="removeMeal('Grilled Chicken with Herb Rice and Steamed Vegetables')">Remove</button>
+                         </div>
+                    </div>
+
+                    <!-- column 2-->
+                    <div class="single-menu">
+                        <img src="Images/Tomato-basil-penne-pasta-vegan.webp" alt="" >
+                        <div class="menu-content">
+                            <h5>Tomato-Basil Penne Pasta (V)<span> $16</span></h5>
+                            <p>Penne pasta tossed in rich tomato and fresh basil sauce</p>
+                            <button onclick="orderMeal('Tomato-Basil Penne Pasta (V)')">Order</button>
+                            <button onclick="removeMeal('Tomato-Basil Penne Pasta (V)')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="single-menu">
+                        <img src="Images/Ground-Beef-Stroganoff-picture.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Beef Stroganoff with Mashed Potatoes <span>$18</span></h5>
+                            <p>Creamy mushroom and beef sauce over tender beef and mashed potatoes</p>
+                            <button onclick="orderMeal('Beef Stroganoff with Mashed Potatoes')">Order</button>
+                            <button onclick="removeMeal('Beef Stroganoff with Mashed Potatoes')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 4-->
+                    <div class="single-menu">
+                        <img src="Images/teriyaki-stir-fry-rice.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Teriyaki Tofu Stir-fry with jasmine Rice (V) <span>$16</span></h5>
+                            <p>Sweet and savoury stir-fried tofu with mixed vegetables and jasmine rice</p>
+                            <button onclick="orderMeal('Teriyaki Tofu Stir-fry with jasmine Rice (V)')">Order</button>
+                            <button onclick="removeMeal('Teriyaki Tofu Stir-fry with jasmine Rice (V)')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 5-->
+                    <div class="single-menu">
+                        <img src="Images/quinoa-salad.jpg" alt="" >
+                        <div class="menu-content"> 
+                            <h5>Mediterranean Quinoa Bowl with Feta and Olives (V) <span>$16</span></h5>
+                            <p>Light and nutritious quinoa salad with cherry tomatoes and herbs</p>
+                            <button onclick="orderMeal('Mediterranean Quinoa Bowl with Feta and Olives (V)')">Order</button>
+                            <button onclick="removeMeal('Mediterranean Quinoa Bowl with Feta and Olives (V)')">Remove</button>
+                        </div>
+                    </div>
+
+                </div>
+            
+
+                <!-- light snack column-->
+                <div class="menu-column">
+                    <h4>Light Bites & Snacks</h4>
+
+                    <!-- column 1-->
+                    <div class="single-menu">
+                        <img src="Images/turkey-sandwich.avif" alt="" >
+                        <div class="menu-content">
+                            <h5>Turkey & Cheese Sandwich <span>$12</span></h5>
+                            <p>Sliced turkey, cheese, and lettuce on soft whole grain bread.</p>
+                            <button onclick="orderMeal('Turkey & Cheese Sandwich')">Order</button>
+                            <button onclick="removeMeal('Turkey & Cheese Sandwich')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- column 2-->
+                    <div class="single-menu">
+                        <img src="Images/roasted-vegetable-and-hummus-wraps-hero.webp" alt="" >
+                        <div class="menu-content">
+                            <h5>Hummus & Roasted Veggie Wrap (V) <span>$12</span></h5>
+                            <p>Roasted vegetables with hummus wrapped in a soft tortilla</p>
+                            <button onclick="orderMeal('Hummus & Roasted Veggie Wrap (V)')">Order</button>
+                            <button onclick="removeMeal('Hummus & Roasted Veggie Wrap (V)')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="single-menu">
+                        <img src="Images/mainland-cheese-and-crackers.avif" alt="" >
+                        <div class="menu-content">
+                            <h5>Cheese & Crackers <span>$5</span></h5>
+                            <p>A classic combo of aged cheese and crispy crackers</p>
+                            <button onclick="orderMeal('Cheese & Crackers')">Order</button>
+                            <button onclick="removeMeal('Cheese & Crackers')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 4-->
+                    <div class="single-menu">
+                        <img src="Images/fruit-cup.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Fruit Cup <span>$4</span></h5>
+                            <p>A refreshing mix of seasonal fresh fruit</p>
+                            <button onclick="orderMeal('Fruit Cup')">Order</button>
+                            <button onclick="removeMeal('Fruit Cup')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 5-->
+                    <div class="single-menu">
+                        <img src="Images/nutz.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Mixed Nuts <span>$4</span></h5>
+                            <p>A crunchy assortment of salted roasted nuts</p>
+                            <button onclick="orderMeal('Mixed Nuts')">Order</button>
+                            <button onclick="removeMeal('Mixed Nuts')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 6-->
+                    <div class="single-menu">
+                        <img src="Images/cookie.webp" alt="" >
+                        <div class="menu-content">
+                            <h5>Chocolate-Chip Cookie <span>$15</span></h5>
+                            <p>Soft-baked cookie with gooey chocolate chips</p>
+                            <button onclick="orderMeal('Chocolate-Chip Cookie')">Order</button>
+                            <button onclick="removeMeal('Chocolate-Chip Cookie')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 7-->
+                    <div class="single-menu">
+                        <img src="Images/blueberry-muffin.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Blueberry Muffin <span>$4</span></h5>
+                            <p>Moist muffin bursting with sweet blueberries</p>
+                            <button onclick="orderMeal('Blueberry Muffin')">Order</button>
+                            <button onclick="removeMeal('Blueberry Muffin')">Remove</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!--Beverages column-->
+                <div class="menu-column">
+                    <h4>Beverages</h4>        
+
+                    <!-- column 1-->
+                    <div class="single-menu">
+                        <img src="Images/water.webp" alt="" >
+                        <div class="menu-content">
+                            <h5>Water <span>$4</span></h5>
+                            <p>Pure, refreshing bottled water</p>
+                            <button onclick="orderMeal('Water')">Order</button>
+                            <button onclick="removeMeal('Water')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- column 2-->
+                    <div class="single-menu">
+                        <img src="Images/sparkle-water.jpeg" alt="" >
+                        <div class="menu-content">
+                            <h5>Sparkling Water <span>$6</span></h5>
+                            <p>Lightly carbonated water with a crisp finish</p>
+                            <button onclick="orderMeal('Sparkling Water')">Order</button>
+                            <button onclick="removeMeal('Sparkling Water')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="single-menu">
+                        <img src="Images/juice.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Juice <span>$6</span></h5>
+                            <p>Choice of orange, apple, or tropical blend</p>
+                            <button onclick="orderMeal('Juice')">Order</button>
+                            <button onclick="removeMeal('Juice')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 4-->
+                    <div class="single-menu">
+                        <img src="Images/soda.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Soda <span>$5</span></h5>
+                            <p>Classic fizzy favourites (Ask attendant for available options)</p>
+                            <button onclick="orderMeal('Soda')">Order</button>
+                            <button onclick="removeMeal('Soda')">Remove</button>
+                        </div>
+                    </div>
+                    
+                    
+                    <!--column 5-->
+                    <div class="single-menu">
+                        <img src="Images/coffee.jpeg" alt="" >
+                        <div class="menu-content">
+                            <h5>Fresh-brewed Coffee <span>$7</span></h5>
+                            <p>Freshly brewed, rich and aromatic</p>
+                            <button onclick="orderMeal('Fresh-brewed Coffee')">Order</button>
+                            <button onclick="removeMeal('Fresh-brewed Coffee')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 6-->
+                    <div class="single-menu">
+                        <img src="Images/hot-choccy.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Hot Chocolate <span>$7</span></h5>
+                            <p>Creamy cocoa goodness topped with a frothy finish</p>
+                            <button onclick="orderMeal('Hot Chocolate')">Order</button>
+                            <button onclick="removeMeal('Hot Chocolate')">Remove</button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="single-menu">
+                        <img src="Images/red-wine.webp" alt="" >
+                        <div class="menu-content">
+                            <h5>Red-Wine (Cabernet Sauvignon)<span>$12</span></h5>
+                            <p>Smooth and bold, with fruity undertones</p>
+                            <button onclick="orderMeal('Red-Wine (Cabernet Sauvignon)')">Order</button>
+                            <button onclick="removeMeal('Red-Wine (Cabernet Sauvignon)')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- column 7-->
+                    <div class="single-menu">
+                        <img src="Images/white-wine.avif" alt="" >
+                        <div class="menu-content">
+                            <h5>White-Wine (Chardonnay)<span>$12</span></h5>
+                            <p>Crisp and fruity with rich and buttery undertones</p>
+                            <button onclick="orderMeal('White-Wine (Chardonnay)')">Order</button>
+                            <button onclick="removeMeal('White-Wine (Chardonnay)')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- column 8-->
+                    <div class="single-menu">
+                        <img src="Images/beer.jpeg" alt="" >
+                        <div class="menu-content">
+                            <h5>Beer (Lager / Pale Ale) <span>$11</span></h5>
+                            <p>Classic beers loved by all (See attendants for availability)</p>
+                            <button onclick="orderMeal('Beer (Lager / Pale Ale)')">Order</button>
+                            <button onclick="removeMeal('Beer (Lager / Pale Ale)')">Remove</button>
+                        </div>
+                    </div>
+
+                    <!--column 9-->
+                    <div class="single-menu">
+                        <img src="Images/spirit-drink.jpg" alt="" >
+                        <div class="menu-content">
+                            <h5>Spirits <span>$14</span></h5>
+                            <p>A selection of whiskey, vodka, and gin. Either mixed with a mixer or served on the rocks</p>
+                            <button onclick="orderMeal('Spirits')">Order</button>
+                            <button onclick="removeMeal('Spirits')">Remove</button>
+                        </div>
+                    </div>  
+
+                </div>
+        
+            </div>
+
+        </div>
+
+        <!--Buttons-->
+        <div class="action">
+            <button class="red-btn" id="continueBtnSummary">Continue</button>
+            <button class="red-btn2" id="previousBtn">Previous</button>
+        </div>
+
+        <!--Script source for buttons-->
+        <script src="JS/scripts.js"></script>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fly Dream Air - Seat Selection</title>
+  <!-- Use the same CSS files as other pages -->
+  <link rel="stylesheet" href="CSS/seatStyles.css">
+  <link rel="stylesheet" href="CSS/bookingStyles.css">
+  <!-- Add your specific seat selection styles -->
+  <link rel="stylesheet" href="CSS/seatSelection.css">
+</head>
+<body>
+<div class="header">
+<div class="logo-container">
+<a href="index.html"><img alt="FlyDreamAirLogo" class="logo" src="Images/FlyDreamAirLogo.png"/></a>
+</div>
+<div class="top-nav">
+<div class="search-container">
+<input class="search-box" placeholder="Search..." type="text"/>
+<svg class="search-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+</div>
+<div class="login-dropdown">
+<button class="login-btn">Miss Julia</button>
+<div class="login-content">
+<a href="#">My Bookings</a>
+<a href="#">Account Settings</a>
+<a href="#">Log out</a>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-tabs">
+<a class="completed" href="select_flight.html"><img alt="Tick" class="tick-img" src="Images/tick.png"/>
+
+      Select
+    </a>
+<a class="completed" href="guests_info.html"><img alt="Tick" class="tick-img" src="Images/tick.png"/>
+  Guests Information
+    </a>
+<a href="#"><u>Seat Selection</u></a>
+<a href="#">Add Services</a>
+<a href="#">Booking Summary</a>
+<a href="#">Payment</a>
+</div>
+
+
+
+<div class="main-content">
+<div class="seat-map-container">
+<div class="seat-map-header">
+<div class="flight-info-seat" id="flightInfoText">
+  ✈ Loading flight info...
+</div>
+
+</div>
+<div class="seat-legend">
+<div class="legend-item">
+<div class="legend-color" style="background-color: #e9f7ef; border: 1px solid #2ecc71;"></div>
+<span>Available</span>
+</div>
+<div class="legend-item">
+<div class="legend-color" style="background-color: #005EB8;"></div>
+<span>Selected</span>
+</div>
+<div class="legend-item">
+<div class="legend-color" style="background-color: #f5f5f5; border: 1px dashed #ccc;"></div>
+<span>Occupied</span>
+</div>
+<div class="legend-item">
+<div class="legend-color" style="background-color: #f0e9ff; border: 1px solid #9b59b6;"></div>
+<span>Premium (+$45)</span>
+</div>
+</div>
+<div class="aircraft-layout">
+<div class="cockpit">
+<div class="cockpit-visual">
+<div class="cockpit-window"></div>
+</div>
+<div class="cockpit-label">Front of Aircraft</div>
+</div>
+<div class="cabin-class">
+<h3 class="cabin-title">Business Class</h3>
+<div class="seat-row">
+<div class="row-number">1</div>
+<div class="seats">
+<div class="seat premium" data-seat="1A">1A</div>
+<div class="seat premium" data-seat="1B">1B</div>
+<div class="aisle">Aisle</div>
+<div class="seat premium" data-seat="1C">1C</div>
+<div class="seat premium" data-seat="1D">1D</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">2</div>
+<div class="seats">
+<div class="seat premium" data-seat="2A">2A</div>
+<div class="seat premium" data-seat="2B">2B</div>
+<div class="aisle">Aisle</div>
+<div class="seat premium" data-seat="2C">2C</div>
+<div class="seat premium" data-seat="2D">2D</div>
+</div>
+</div>
+</div>
+<div class="divider"></div>
+<div class="cabin-class">
+<h3 class="cabin-title">Economy Class</h3>
+<div class="seat-row">
+<div class="row-number">5</div>
+<div class="seats">
+<div class="seat available" data-seat="5A">5A</div>
+<div class="seat available" data-seat="5B">5B</div>
+<div class="seat available" data-seat="5C">5C</div>
+<div class="aisle">Aisle</div>
+<div class="seat available" data-seat="5D">5D</div>
+<div class="seat available" data-seat="5E">5E</div>
+<div class="seat available" data-seat="5F">5F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">6</div>
+<div class="seats">
+<div class="seat available" data-seat="6A">6A</div>
+<div class="seat occupied" data-seat="6B">6B</div>
+<div class="seat available" data-seat="6C">6C</div>
+<div class="aisle">Aisle</div>
+<div class="seat occupied" data-seat="6D">6D</div>
+<div class="seat available" data-seat="6E">6E</div>
+<div class="seat occupied" data-seat="6F">6F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">7</div>
+<div class="seats">
+<div class="seat available" data-seat="7A">7A</div>
+<div class="seat available" data-seat="7B">7B</div>
+<div class="seat available" data-seat="7C">7C</div>
+<div class="aisle">Aisle</div>
+<div class="seat available" data-seat="7D">7D</div>
+<div class="seat available" data-seat="7E">7E</div>
+<div class="seat available" data-seat="7F">7F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">8</div>
+<div class="seats">
+<div class="seat available" data-seat="8A">8A</div>
+<div class="seat available" data-seat="8B">8B</div>
+<div class="seat occupied" data-seat="8C">8C</div>
+<div class="aisle">Aisle</div>
+<div class="seat available" data-seat="8D">8D</div>
+<div class="seat available" data-seat="8E">8E</div>
+<div class="seat occupied" data-seat="8F">8F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">9</div>
+<div class="seats">
+<div class="seat available" data-seat="9A">9A</div>
+<div class="seat available" data-seat="9B">9B</div>
+<div class="seat available" data-seat="9C">9C</div>
+<div class="aisle">Aisle</div>
+<div class="seat available" data-seat="9D">9D</div>
+<div class="seat available" data-seat="9E">9E</div>
+<div class="seat available" data-seat="9F">9F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">10</div>
+<div class="seats">
+<div class="seat available" data-seat="10A">10A</div>
+<div class="seat occupied" data-seat="10B">10B</div>
+<div class="seat available" data-seat="10C">10C</div>
+<div class="aisle">Aisle</div>
+<div class="seat occupied" data-seat="10D">10D</div>
+<div class="seat available" data-seat="10E">10E</div>
+<div class="seat occupied" data-seat="10F">10F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">11</div>
+<div class="seats">
+<div class="seat available" data-seat="11A">11A</div>
+<div class="seat available" data-seat="11B">11B</div>
+<div class="seat available" data-seat="11C">11C</div>
+<div class="aisle">Aisle</div>
+<div class="seat available" data-seat="11D">11D</div>
+<div class="seat available" data-seat="11E">11E</div>
+<div class="seat available" data-seat="11F">11F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">12</div>
+<div class="seats">
+<div class="seat available" data-seat="12A">12A</div>
+<div class="seat available" data-seat="12B">12B</div>
+<div class="seat occupied" data-seat="12C">12C</div>
+<div class="aisle">Aisle</div>
+<div class="seat available" data-seat="12D">12D</div>
+<div class="seat available" data-seat="12E">12E</div>
+<div class="seat occupied" data-seat="12F">12F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">13</div>
+<div class="seats">
+<div class="seat available" data-seat="13A">13A</div>
+<div class="seat available" data-seat="13B">13B</div>
+<div class="seat available" data-seat="13C">13C</div>
+<div class="aisle">Aisle</div>
+<div class="seat available" data-seat="13D">13D</div>
+<div class="seat available" data-seat="13E">13E</div>
+<div class="seat available" data-seat="13F">13F</div>
+</div>
+</div>
+<div class="seat-row">
+<div class="row-number">14</div>
+<div class="seats">
+<div class="seat available" data-seat="14A">14A</div>
+<div class="seat occupied" data-seat="14B">14B</div>
+<div class="seat available" data-seat="14C">14C</div>
+<div class="aisle">Aisle</div>
+<div class="seat occupied" data-seat="14D">14D</div>
+<div class="seat available" data-seat="14E">14E</div>
+<div class="seat occupied" data-seat="14F">14F</div>
+</div>
+</div>
+</div>
+</div>
+<div class="summary">
+<h2>Booking Summary</h2>
+<div class="info-item">
+<div class="info-label">Selected Seat:</div>
+<div class="info-value" id="selected-seat-display">None selected</div>
+</div>
+<div class="info-item">
+<div class="info-label">Seat Type:</div>
+<div class="info-value" id="seat-type-display">-</div>
+</div>
+<div class="info-item">
+<div class="info-label">Additional Cost:</div>
+<div class="info-value" id="seat-cost-display">$0</div>
+</div>
+</div>
+<div class="action-buttons">
+<button class="btn btn-secondary" onclick="window.location.href='guests_info.html'">
+          ← Back to Guest Information
+        </button>
+<button class="btn btn-primary" id="confirm-booking">
+          Continue to Add Services →
+        </button>
+</div>
+</div>
+</div>
+
+  <!-- Footer - Match other pages -->
+  <div class="footer-nav">
+    <a href="#">DESTINATIONS</a>
+    <a href="#">PLAN YOUR TRAVEL</a>
+    <a href="#">OUR FLEET</a>
+    <a href="#">TRAVEL TIPS</a>
+    <a href="#">FAQs</a>    
+    <a href="#">ABOUT US</a>
+    <a href="#">CONTACT US</a>
+  </div>
+
+  <!-- Scripts - Use the same JS files -->
+  <script src="JS/scripts.js"></script>
+  <script src="JS/seating.js"></script>
+  <script src="JS/seatSelection.js"></script>
+  <script src="JS/select_flight.js"></script>
+
+</body>
+</html>

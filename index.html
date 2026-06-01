@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<!-- Sets the document language to English -->
+<head>
+  <!-- Defines metadata and links for the document -->
+  <meta charset="UTF-8">
+  <!-- Specifies the character encoding as UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures responsive design for various device widths -->
+  <title>Travel Website</title>
+  <!-- Sets the page title displayed in the browser tab -->
+  <link rel="stylesheet" href="CSS/styles.css">
+  <!-- Links to an external CSS stylesheet for styling -->
+</head>
+<body>
+  <!-- Contains the visible content of the webpage -->
+  <div class="header">
+    <!-- Header section containing the logo and top navigation -->
+    <div class="logo">
+      <!-- Container for the website logo -->
+      <a href=index.html><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+      <!-- Displays the Fly Dream Air logo image -->
+    </div>
+    <div class="top-nav">
+      <!-- Top navigation bar with search and login options -->
+      <div class="search-container">
+        <!-- Container for the search input and icon -->
+        <input type="text" placeholder="Search..." class="search-box">
+        <!-- Text input for search queries -->
+        <img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+        <!-- Search icon image -->
+      </div>
+      <div class="login-dropdown">
+        <!-- Dropdown menu for customer login options -->
+        <button class="login-btn">Customer Login</button>
+        <!-- Button to trigger the customer login dropdown -->
+        <div class="login-content">
+          <!-- Dropdown content for customer login -->
+          <a href="#">Login</a>
+          <!-- Link to customer login page -->
+          <a href="#">Register</a>
+          <!-- Link to customer registration page -->
+          <a href="#" class="forgot-password">Forgot Password?</a>
+          <!-- Link to password recovery page -->
+        </div>
+      </div>
+      <div class="login-dropdown">
+        <!-- Dropdown menu for staff login options -->
+        <button class="login-btn">Staff Login</button>
+        <!-- Button to trigger the staff login dropdown -->
+        <div class="login-content">
+          <!-- Dropdown content for staff login -->
+          <a href="#">Login</a>
+          <!-- Link to staff login page -->
+          <a href="#" class="forgot-password">Forgot Password?</a>
+          <!-- Link to staff password recovery page -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-tabs">
+    <!-- Navigation tabs for main site sections -->
+    <a href="index.html" class="active"><img src="Images/PlaneIcon.png" alt="Plane Icon" class="plane-icon">BOOK FLIGHT</a>
+    <!-- Link to book flight page, marked as active with a plane icon -->
+    <a href="searchbar.html" class="active"><img src="Images/PlaneIcon.png"alt="Plane Icon" class="plane-icon">MANAGE BOOKING</a>
+    <!-- Link to manage booking page -->
+    <a href="#">ONLINE CHECK-IN</a>
+    <!-- Link to online check-in page -->
+    <a href="#">FLIGHT STATUS</a>
+    <!-- Link to flight status page -->
+    <a href="#">FREQUENT FLYER</a>
+    <!-- Link to frequent flyer programme page -->
+    <a href="#">AIRPORT LOUNGES</a>
+    <!-- Link to airport lounges page -->
+  </div>
+  <div class="hero">
+    <!-- Hero section with flight search form and promotions -->
+    <div class="flight-form">
+      <!-- Form for searching flights -->
+      <input type="radio" name="flight-type"> Return
+      <!-- Radio button for selecting return flight, checked by default -->
+      <input type="radio" name="flight-type" checked> One Way
+      <!-- Radio button for selecting one-way flight -->
+      
+      <!--departure location -->
+      <select id="from">
+        <option value="">Select departure location</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Melbourne">Melbourne</option>
+        <option value="Brisbane">Brisbane</option>
+      </select>
+      
+      <!-- destination location -->
+      <select id="to">
+        <option value="">Select arrival location</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Melbourne">Melbourne</option>
+        <option value="Brisbane">Brisbane</option>
+      </select>
+
+      <input type="date" id="flightDate" value="2025-05-15">
+      <!-- Date input for departure, default set to 15 April 2025 -->
+      <input type="date" value="2025-05-16">
+      <!-- Date input for return, default set to 16 April 2025 -->
+      <input type="number" placeholder="Person" value="1">
+      <!-- Number input for number of passengers, default set to 1 -->
+      <input type="text" placeholder="Promo Code">
+      <!-- Text input for entering a promotional code -->
+      <button id="searchFlight">SEARCH</button>
+      <!-- Button to submit the flight search form -->
+       
+    </div>
+    <div class="promo-boxes">
+      <!-- Container for promotional offer boxes -->
+      <div class="promo-box">
+        <!-- Individual promotional box for Denpasar -->
+        <h3>Denpasar</h3>
+        <!-- Heading for Denpasar destination -->
+        <p>Return from $499</p>
+        <!-- Price information for Denpasar return flight -->
+      </div>
+      <div class="promo-box">
+        <!-- Individual promotional box for Bangkok -->
+        <h3>Bangkok</h3>
+        <!-- Heading for Bangkok destination -->
+        <p>Return from $599</p>
+        <!-- Price information for Bangkok return flight -->
+      </div>
+      <div class="promo-box">
+        <!-- Individual promotional box for Tokyo -->
+        <h3>Tokyo</h3>
+        <!-- Heading for Tokyo destination -->
+        <p>Return from $799</p>
+        <!-- Price information for Tokyo return flight -->
+      </div>
+    </div>
+    <div class="promo-banner">
+      <!-- Banner section for additional promotions -->
+      <h1></h1>
+      <!-- Empty heading for promotional banner (content missing) -->
+      <p></p>
+      <!-- Empty paragraph for promotional banner (content missing) -->
+    </div>
+  </div>
+  <div class="footer-nav">
+    <!-- Footer navigation with links to additional pages -->
+    <a href="#">DESTINATIONS</a>
+    <!-- Link to destinations page -->
+    <a href="#">PLAN YOUR TRAVEL</a>
+    <!-- Link to travel planning page -->
+    <a href="#">OUR FLEET</a>
+    <!-- Link to fleet information page -->
+    <a href="#">TRAVEL TIPS</a>
+    <!-- Link to travel tips page -->
+    <a href="#">FAQs</a>    
+    <!-- Link to frequently asked questions page -->
+    <a href="#">ABOUT US</a>
+    <!-- Link to about us page -->
+    <a href="#">CONTACT US</a>
+    <!-- Link to contact us page -->
+  </div>
+  <script src="JS/scripts.js"></script>
+
+</body>
+</html>

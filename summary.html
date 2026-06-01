@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Summary - Fly Dream Air</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <!-- Use the same CSS files as other pages -->
+  <link rel="stylesheet" href="CSS/bookingStyles.css">
+  <link rel="stylesheet" href="CSS/summaryStyles.css" />
+</head>
+<body>
+  <!-- Contains the visible content of the webpage -->
+  <div class="header">
+        
+    <!-- Header section containing the logo and top navigation -->
+    <div class="logo">
+        <!-- Container for the website logo -->
+        <a href=index.html><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+        <!-- Displays the Fly Dream Air logo image -->
+    </div>
+    
+    <div class="top-nav">
+        <!-- Top navigation bar with search and login options -->
+        <div class="search-container">
+        <!-- Container for the search input and icon -->
+        <input type="text" placeholder="Search..." class="search-box">
+        <!-- Text input for search queries -->
+        <img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+        <!-- Search icon image -->
+        </div>
+        <div class="login-dropdown">
+        <!-- Dropdown menu for customer login options -->
+        <button class="login-btn">Miss Julia</button>
+        <!-- Button to trigger the customer login dropdown -->
+        <div class="login-content">
+            <br>Gold Member</br>
+            <!-- Link to customer redeem points -->
+            <a href="#">Redeem Point</a>
+            <!-- Link to Log out -->
+            <a href="#">Log out</a>
+        </div>
+        </div>
+    </div>
+    </div>  
+
+    <div class="nav-tabs">
+        <!-- Flight Selection compeleted -->
+        <a href="select_flight.html"><img src="Images/tick.png" class="tick-icon">Select</a>
+        <a href="guests_info.html"><img src="Images/tick.png" class="tick-icon">Guests Information</a>
+        <a href="seat_selection_linked.html"><img src="Images/tick.png" class="tick-icon">Seat Selection</a>
+        <a href="inflightservices.html"><img src="Images/tick.png" class="tick-icon">Add Services</a>
+        <a href="#"><u>Booking Summary</u></a>
+        <a href="#">Payment</a>
+    </div>
+
+  <div class="page-container">
+    <div class="summary-box">
+      <h2>Passenger Summary</h2>
+      <div class="summary-group">
+        <p><strong>Full Name: </strong> <span id="firstName"></span> <span id="middleName"></span> <span id="lastName"></span></p>
+        <p><strong>Email: </strong> <span id="email"></span></p>
+        <p><strong>Phone: </strong> <span id="phone"></span></p>
+      </div>
+
+      <h2>Flight Summary</h2>
+      <div class="summary-group">
+        <p><strong>From: </strong> <span id="fromLocation"></span></span></p>
+        <p><strong>To: </strong> <span id="toLocation"></span></p>
+        <p><strong>Departure Date: </strong> <span id="departureDate"></span></p>
+        <p><strong>Flight Number: </strong> <span id="flightNumber"></span></p>
+        <p><strong>Departure Time: </strong> <span id="depTime"></span></p>
+        <p><strong>Arrival Time: </strong> <span id="arrTime"></span></p>
+      </div>
+
+      <h2>Extras and Payment</h2>
+      <div class="summary-group">
+        <p><strong>Meal Preference: </strong><span id="mealPreference">None</span></p>
+        <p><strong>Seat Number: </strong> <span id="selectedSeat"></span></p>
+        <p><strong>Class: </strong> <span id="fareType"></span></p>
+        <p><strong>Total Price: </strong> <span id="farePrice"></span></p>
+      </div>
+
+      <!-- Baggage Options Heading -->
+      <h3>Baggage Options (10kg checked baggage allowance included)</h3>
+      
+      <!-- Luggage Options -->
+      <div class="luggage-options">
+        <button onclick="selectLuggage(0)">Hand Carry Only (Free)</button>
+        <button onclick="selectLuggage(15)">Add 10kg (+$15)</button>
+        <button onclick="selectLuggage(20)">Add 20kg (+$20)</button>
+      </div>
+
+      <div class="confirm-button-container">
+        <button class="confirm-button" onclick="confirmBooking()" id="confirmBtn">Confirm Booking</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="JS/summary.js"></script>
+    <!--Buttons script source-->
+  <script src="JS/scripts.js"></script>
+  <script src="JS/select_flight.js"></script>
+  <script src="JS/guestinfo.js"></script>
+  <script src="JS/seatSelection.js"></script>
+</body>
+</html>

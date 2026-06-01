@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="CSS/paymentStyles.css">
+    <!-- Use the same CSS files as other pages -->
+    <link rel="stylesheet" href="CSS/bookingStyles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script defer src="JS/payment.js"></script>
+    <style>
+        .summary-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+      <!-- Contains the visible content of the webpage -->
+  <div class="header">
+        
+    <!-- Header section containing the logo and top navigation -->
+    <div class="logo">
+        <!-- Container for the website logo -->
+        <a href=index.html><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+        <!-- Displays the Fly Dream Air logo image -->
+    </div>
+    
+    <div class="top-nav">
+        <!-- Top navigation bar with search and login options -->
+        <div class="search-container">
+        <!-- Container for the search input and icon -->
+        <input type="text" placeholder="Search..." class="search-box">
+        <!-- Text input for search queries -->
+        <img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+        <!-- Search icon image -->
+        </div>
+        <div class="login-dropdown">
+        <!-- Dropdown menu for customer login options -->
+        <button class="login-btn">Miss Julia</button>
+        <!-- Button to trigger the customer login dropdown -->
+        <div class="login-content">
+            <br>Gold Member</br>
+            <!-- Link to customer redeem points -->
+            <a href="#">Redeem Point</a>
+            <!-- Link to Log out -->
+            <a href="#">Log out</a>
+        </div>
+        </div>
+    </div>
+    </div>  
+
+    <div class="nav-tabs">
+        <!-- Flight Selection compeleted -->
+        <a href="select_flight.html"><img src="Images/tick.png" class="tick-icon">Select</a>
+        <a href="guest_info.html"><img src="Images/tick.png" class="tick-icon">Guests Information</a>
+        <a href="seat_selection_linked.html"><img src="Images/tick.png" class="tick-icon">Seat Selection</a>
+        <a href="inflightservices.html"><img src="Images/tick.png" class="tick-icon">Add Services</a>
+        <a href="summary.html"><img src="Images/tick.png" class="tick-icon">Booking Summary</a>
+        <a href="#"><u>Payment</u></a>
+    </div>
+
+
+</br></br>
+    <div class="page-container">
+        <div class="summary-box">
+            <h2>Payment Options</h2>
+
+            <div class="summary-group">
+                <p class="summary-title">FlyDreamAir accepts the following payment options:</p>
+            </div>
+
+            <form class="payment-methods">
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="card">
+                    <span class="custom-radio"></span>
+                    <div class="payment-info">
+                        <h4>Debit or Credit Card</h4>
+                        <div class="logo-container">
+                            <img src="Images/Visa.png" alt="Visa Logo">
+                            <img src="Images/Mastercard.png" alt="Mastercard Logo">
+                            <img src="Images/Amex.png" alt="American Express Logo">
+                        </div>
+                        <p>Visa, Mastercard, American Express</p>
+                    </div>
+                    <div class="payment-details"></div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="bpay">
+                    <span class="custom-radio"></span>
+                    <div class="payment-info">
+                        <h4>BPAY</h4>
+                        <div class="logo-container">
+                            <img src="Images/Bpay.png" alt="BPAY Logo">
+                        </div>
+                        <p>Use your bank's BPAY facility to complete the payment.</p>
+                    </div>
+                    <div class="payment-details"></div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="paypal">
+                    <span class="custom-radio"></span>
+                    <div class="payment-info">
+                        <h4>PayPal</h4>
+                        <div class="logo-container">
+                            <img src="Images/Paypal.png" alt="PayPal Logo">
+                        </div>
+                        <p>Log in with your PayPal account to complete the transaction.</p>
+                    </div>
+                    <div class="payment-details"></div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="payid">
+                    <span class="custom-radio"></span>
+                    <div class="payment-info">
+                        <h4>PayID</h4>
+                        <div class="logo-container">
+                            <img src="Images/Payid.png" alt="PayID Logo">
+                        </div>
+                        <p>Make a real-time bank transfer using PayID.</p>
+                    </div>
+                    <div class="payment-details"></div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="zip">
+                    <span class="custom-radio"></span>
+                    <div class="payment-info">
+                        <h4>Zip</h4>
+                        <div class="logo-container">
+                            <img src="Images/Zip.png" alt="Zip Logo">
+                        </div>
+                        <p>Pay later with Zip interest-free plans.</p>
+                    </div>
+                    <div class="payment-details"></div>
+                </label>
+            </form>
+
+            <div class="confirm-button-container">
+                <button class="confirm-button" id="paymentBtn">Confirm Payment Method</button>
+            </div>
+        </div>
+    </div>
+
+          <!--Buttons script source-->
+    <script src="JS/scripts.js"></script>
+</body>
+</html>

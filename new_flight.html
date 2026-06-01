@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<!-- Sets the document language to English -->
+<head>
+	<!-- Defines metadata and links for the document -->
+	<meta charset="UTF-8">
+	<!-- Specifies the character encoding as UTF-8 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Ensures responsive design for various device widths -->
+	<title>Fly Dream Air</title>
+	<!-- Sets the page title displayed in the browser tab -->
+	<link rel="stylesheet" href="CSS/styles.css">
+	<!-- Links to an external CSS stylesheet for styling -->
+	<!--booking css-->
+	<link rel="stylesheet" href="CSS/bookingStyles.css">
+</head>
+
+<body>
+	<!-- Contains the visible content of the webpage -->
+	<div class="header">
+
+		<!-- Header section containing the logo and top navigation -->
+		<div class="logo">
+		<!-- Container for the website logo -->
+		<a href=index.html><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+		<!-- Displays the Fly Dream Air logo image -->
+		</div>
+
+		<div class="top-nav">
+			<!-- Top navigation bar with search and login options -->
+			<div class="search-container">
+			<!-- Container for the search input and icon -->
+			<input type="text" placeholder="Search..." class="search-box">
+			<!-- Text input for search queries -->
+			<img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+			<!-- Search icon image -->
+			</div>
+			<div class="login-dropdown">
+				<!-- Dropdown menu for customer login options -->
+				<button class="login-btn">Miss Julia</button>
+				<!-- Button to trigger the customer login dropdown -->
+				<div class="login-content">
+					<br>Gold Member</br>
+					<!-- Link to customer redeem points -->
+					<a href="#">Redeem Point</a>
+					<!-- Link to Log out -->
+					<a href="#">Log out</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+<!--    <div class="nav-tabs">
+		<a href="#"><u>Select</u></a>
+		<a href="#">Guests Information</a>
+		<a href="#">Add Services</a>
+    <a href="#">Booking Summary</a>
+    <a href="#">Payment</a>
+    </div>
+    -->
+
+    <!--Start Review the selected flight-->
+    <div class="page-container booking-page">
+        <h2 class="booking-header">Review your flight selection</h2>
+      
+        <!-- Outbound Flight -->
+        <div class="flight-card6">
+			<div class="column">
+			<div>Departing <br><span id="departureDate"></span></br></div>
+			</div>
+      
+			<div class="column">
+				<div class="time" id="depTime"></div>
+				<div><span id="fromLocation"></span></div>
+				<div class="time-small">1h 35m • Non-stop</div>
+			</div>
+      
+			<div class="column">
+				<img src="Images/line.png" class="line-icon" alt="line">
+			</div>
+      
+			<div class="column">
+				<div class="time" id="arrTime"></div>
+				<div><span id="toLocation"></span></div>
+				<div class="time-small"><strong><span id = "flightNumber"></span></strong><br>Operated by Fly Dream Air Australia</div>
+			</div>
+      
+			<div class="column">
+				<button class="change-btn" id="changeBtn">Change</button>
+				<div class="fare-label" id="fareType"></div>			
+				<div class="price" id="farePrice"></div>
+			</div>
+        </div>
+
+		<div class="action-buttons" style="text-align:center; margin-top: 30px;">
+            <button class="red-btn" id="backBtn">Back to Reservation</button>
+		</div>
+    </div>
+    <!--End Review the selected flight-->
+<!--/div-->
+
+<script src="JS/scripts.js"></script>
+<script src="JS/select_flight.js"></script>
+</body>
+</html>

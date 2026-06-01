@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<!-- Sets the document language to English -->
+<head>
+	<!-- Defines metadata and links for the document -->
+	<meta charset="UTF-8">
+	<!-- Specifies the character encoding as UTF-8 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Ensures responsive design for various device widths -->
+	<title>Fly Dream Air</title>
+	<!-- Sets the page title displayed in the browser tab -->
+	<link rel="stylesheet" href="CSS/styles.css">
+	<!-- Links to an external CSS stylesheet for styling -->
+	<!--booking css-->
+	<link rel="stylesheet" href="CSS/bookingStyles.css">
+</head>
+
+<body>
+    <!-- Contains the visible content of the webpage -->
+    <div class="header"> 
+		<!-- Header section containing the logo and top navigation -->
+		<div class="logo">
+		  <!-- Container for the website logo -->
+		  <a href=index.html><img src="Images/FlyDreamAirLogo.png" alt="Fly Dream Air Logo"></a>
+		  <!-- Displays the Fly Dream Air logo image -->
+		</div>
+    
+		<div class="top-nav">
+			<!-- Top navigation bar with search and login options -->
+			<div class="search-container">
+				<!-- Container for the search input and icon -->
+				<input type="text" placeholder="Search..." class="search-box">
+				<!-- Text input for search queries -->
+				<img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+				<!-- Search icon image -->
+			</div>
+			<div class="login-dropdown">
+				<!-- Dropdown menu for customer login options -->
+				<button class="login-btn">Miss Julia</button>
+				<!-- Button to trigger the customer login dropdown -->
+				<div class="login-content">
+					<br>Gold Member</br>
+					<!-- Link to customer redeem points -->
+					<a href="#">Redeem Point</a>
+					<!-- Link to Log out -->
+					<a href="#">Log out</a>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <div class="nav-tabs">
+		<!-- Flight Selection compeleted -->
+		<a href="select_flight.html"><img src="Images/tick.png" class="tick-icon">Select</a>
+		<a href="#"><u>Guests Information</u></a>
+		<a href="#">Seat Selection</a>
+		<a href="#">Add Services</a>
+		<a href="#">Booking Summary</a>
+    <a href="#">Payment</a>
+    </div>
+
+    <!--Guest information form start-->
+    <div class="page-container booking-page">
+        <h2 class="booking-header">Fill the personal information.</h2>
+        <div class="booking-page passenger-form">
+			<!-- Section Header -->
+			<div class="form-header">
+				<img src="Images/a1.png" alt="A1 icon" class="icon a1-icon">
+				<span class="form-title">Adult 1</span>
+			</div>
+        
+			<p>
+				<strong>Accurate guest details are important</strong> 
+				to ensure we are able to contact you in the event of a flight disruption. 
+				Your name should match your government-issued photo ID used at check-in.
+			</p>
+        
+			<!-- Personal Info -->
+			<div class="form-row">
+				<select id = "title">
+					<option value="">Title</option>
+					<option value="mr">Mr</option>
+					<option value="mrs">Mrs</option>
+					<option value="ms">Ms</option>
+					<option value="dr">Dr</option>
+					<option value="prof">Prof</option>
+				</select>
+			</div>
+			<div class="form-row"><input type="text" id="fname"placeholder="First name"></div>
+			<div class="form-row"><input type="text" id="mname" placeholder="Middle name (optional)"></div>
+			<div class="form-row"><input type="text" id="lname" placeholder="Last name"></div>
+			<div class="form-row">
+				<select>
+					<option value="">Gender</option>
+					<option value="f">Female</option>
+					<option value="m">Male</option>
+					<option value="pns">Prefer not to say</option>
+				</select>
+			</div>
+			<div class="form-row"><input type="text" placeholder="Membership number (optional)"></div>
+        
+			<!-- Contact Info -->
+			<div class="form-header contact-header">
+				<img src="Images/ph.png" alt="Phone icon" class="icon phone-icon">
+				<span class="form-title">Contact details</span>
+			</div>
+			<div class="form-row"><input type="tel" id="phone" placeholder="Phone number"></div>
+			<div class="form-row"><input type="email" id="email" placeholder="Email address"></div>
+        
+			<!-- Assistance -->
+			<div class="form-row"><textarea placeholder="Specific assistance/request"></textarea></div>
+        
+			<!-- Buttons -->
+			<div class="form-actions">
+				<button class="red-btn">Next Passenger</button>
+				<button class="red-btn" id="continueToSeatSelection">Continue</button>
+			</div>
+        </div>
+    </div><!--End guest information form-->
+    <!--/div-->
+
+	<script src="JS/guestinfo.js"></script>
+	<script src="JS/scripts.js"></script>
+</body>
+</html>
